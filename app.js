@@ -1,4 +1,4 @@
-var slack = require("slack");
+var slack = require("slack-node");
 var express = require('express');
 var url = require('url');
 
