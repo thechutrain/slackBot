@@ -1,4 +1,4 @@
-var slack = require("slack-node");
+var Slack = require("slack-node");
 var express = require('express');
 var url = require('url');
 
@@ -16,7 +16,7 @@ app.get('/', function(request, response){
 }); // closes app.get
 
 function sendMessage(urlObject){
-    slack = new slack();
+    slack = new Slack();
     slack.setWebhook(urlObject.response_url);
 
     var userText = urlObject.text;
