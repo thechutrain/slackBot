@@ -12,7 +12,8 @@ app.listen(app.get("port"));
 app.get('/', function(request, response){
     var urlObject = url.parse(request.url, true).query;
     console.log(urlObject);
-    sendMessage(urlObject)
+    sendMessage(urlObject);
+    response.send({'text': "ok, got that"});
 }); // closes app.get
 
 function sendMessage(urlObject){
