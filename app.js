@@ -16,7 +16,7 @@ app.get('/', function(request, response){
 }); // closes app.get
 
 function sendMessage(urlObject){
-    slack = new Slack();
+    slack = new slack();
     slack.setWebhook(urlObject.response_url);
 
     var userText = urlObject.text;
