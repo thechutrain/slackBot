@@ -1,5 +1,5 @@
 var slack = require("slack");
-var express = requrie('express');
+var express = require('express');
 var url = require('url');
 
 // Setting up App
